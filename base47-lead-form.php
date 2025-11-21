@@ -3,7 +3,7 @@
 Plugin Name: Base47 Lead Form
 Plugin URI: https://47-studio.com
 Description: Lightweight lead capture system with HTML form templates, AJAX saving and optional WhatsApp integration.
-Version: 2.7.2
+Version: 2.7.3
 Author: 47-Studio
 Author URI: https://47-studio.com
 Text Domain: base47-lead-form
@@ -18,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 | CONSTANTS
 |--------------------------------------------------------------------------
 */
-define( 'BASE47_LF_VERSION', '2.7.2' );
+define( 'BASE47_LF_VERSION', '2.7.3' );
 define( 'BASE47_LF_PATH', plugin_dir_path( __FILE__ ) );
 define( 'BASE47_LF_URL',  plugin_dir_url( __FILE__ ) );
 define( 'BASE47_LF_BASENAME', plugin_basename( __FILE__ ) );
