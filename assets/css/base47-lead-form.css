@@ -1,0 +1,36 @@
+/* Base47 Lead Form – minimal default styling */
+
+.base47-lead-form-wrapper {
+    max-width: 520px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Messages */
+.base47-lf-message {
+    margin-top: 12px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.base47-lf-message.success {
+    color: #155724;
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+    padding: 8px 10px;
+    border-radius: 4px;
+}
+
+.base47-lf-message.error {
+    color: #721c24;
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 8px 10px;
+    border-radius: 4px;
+}
+
+/* Optional: we can refine later if needed */
+.base47-lead-form-wrapper.loading {
+    opacity: 0.7;
+    pointer-events: none;
+}

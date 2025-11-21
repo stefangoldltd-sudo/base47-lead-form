@@ -1,0 +1,47 @@
+# Changelog
+
+## [2.7.2] - 2024-11-21
+
+### Fixed
+- **CRITICAL**: Fixed filename mismatch `save-hendler.php` → `save-handler.php`
+- **CRITICAL**: Fixed asset file names to match enqueue calls
+- **CRITICAL**: Added missing `base47_lf_form_id` hidden field to all forms
+- **CRITICAL**: Fixed nonce field name from `submit_lead_nonce` to `base47_lf_nonce`
+- **CRITICAL**: Removed incorrect `action` hidden field from forms (AJAX adds it)
+- Fixed typo in form3 filename: `form3-etended.php` → `form3-extended.php`
+- Enhanced save-handler.php to properly handle all form-specific fields:
+  - firstName, lastName (Forms 4 & 5)
+  - branch (Form 4)
+  - doctorLicense (Form 5)
+  - company_name, website, services (Form 2)
+- Added `.base47-lead-form-wrapper` class to all forms for proper message display
+- Removed unused database table creation (using CPT instead)
+- Updated form-loader.php with correct form3 filename
+
+### Changed
+- All forms now use AJAX-only submission (removed POST fallback action)
+- Simplified activation hook to only flush rewrite rules
+- Added deactivation hook for cleanup
+
+### Improved
+- Better email templates with all form fields included
+- Consistent success message handling across all forms
+- Enhanced admin email notifications with form-specific data
+
+## [2.7.0] - 2024-11-20
+
+### Added
+- Modular plugin structure with separated includes
+- 5 distinct form templates
+- WhatsApp integration handler
+- Admin settings page
+- GitHub updater integration
+
+### Changed
+- Restructured from single 2000+ line file to modular architecture
+- Separated forms into individual template files
+- Extracted handlers into dedicated files
+
+## [2.6.0] - Previous versions
+- Legacy monolithic structure
+- All functionality in single file
